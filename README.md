@@ -1,20 +1,28 @@
-# Masked-Face-Recognition
-A face recognition application that will also detect human identity even with face mask.
+# Masked Face Detection and Recognition using MobileNet
 
-How to use this?
-1. Run real_time_face_recognition.py, and then Press "S" to automatically crop and save your face inside the database floder. 
-The accuracy will be lowered if we put image of a person who is not full face inside the database floder. More face features is required for masked face recognition.
+## Overview
+This project focuses on masked face detection and recognition using MobileNet, a lightweight deep learning model optimized for mobile and embedded vision applications. The model is trained to identify faces with and without masks and perform accurate facial recognition.
 
-![Leow Jun Shou](https://user-images.githubusercontent.com/29944896/133741191-5412c042-7b37-4429-8812-6c304175d6f7.jpg)
+## Features
+- Detects masked and unmasked faces.
+- Recognizes individuals even with a mask.
+- Lightweight and optimized for real-time performance using MobileNet.
+- Can be integrated into surveillance systems, access control, and healthcare applications.
 
-2. Run the real_time_face_recognition.py again, and you can have fun.
+## Technologies Used
+- **Python** (for scripting and model implementation)
+- **TensorFlow / Keras** (for deep learning)
+- **OpenCV** (for image processing)
+- **MobileNet** (for efficient face detection and recognition)
+- **NumPy & Pandas** (for data handling)
+- **Matplotlib** (for visualizing results)
 
-![WhatsApp Image 2021-09-13 at 1 09 59 AM](https://user-images.githubusercontent.com/29944896/133741473-fb21bcd8-3c5a-471a-838c-7ddb7ec83186.jpeg)
+## Dataset
+The model is trained on a combination of publicly available datasets containing images of masked and unmasked faces. Data augmentation techniques were applied to improve generalization.
 
-Theoritical accuracy will be around 98%.
+## Installation
 
-Personal experience
-The application have high identity recognition accuracy without masked. 
-Moreover, the identity recognition accuracy did not changed when we are wearing mask, but sometimes it will not classifying our face as object. 
-For example, when we are wearing masked, the name on top of bounding box will 'blink', but the name will always be the correct person.
-Future implementation is to solve this issue.
+### Prerequisites
+Ensure you have Python and necessary dependencies installed:
+```bash
+pip install tensorflow opencv-python numpy pandas matplotlib
